@@ -287,17 +287,19 @@ bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 function addArtist({id, name, years, genre, nationality, bio}){
 
-    artists.push({})
+    artists.push({id, name, years, genre, nationality, bio});
 
   }
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(name){
-
-    
-
+function checkArtist(newName){
+  for(let i=0; artists.length;i++){
+  if(artists[i].name===newName){
+    return true;
+      }
+    }
   }
 
 
